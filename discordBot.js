@@ -7,7 +7,7 @@ const client = new Commando.Client({
    *  OWNER ID MOVED TO TOKEN.JS
    * ########################### */
   owner: process.env.DISCORD_OWNERID || require('./config/config.js').ownerId,
-  commandPrefix: "???",
+  commandPrefix: "&",
   unknownCommandResponse: false
 });
 global.featureLoader = new FeatureLoader(client);
