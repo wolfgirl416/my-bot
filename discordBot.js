@@ -17,14 +17,6 @@ client.registry
     .registerGroups([
         ['groupname', 'Group Name']
     ])
-    
-    .registerGroups([
-      ['staffcommands', 'ban.js']
-    ])
-    .registerGroups([
-      ['staffcommands', 'kick']
-    ])
-
 
     // Registers all built-in groups, commands, and argument types
     .registerDefaults()
