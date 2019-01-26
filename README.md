@@ -1,1 +1,1 @@
-# my-bot
+# wwtbamDiscordBot
