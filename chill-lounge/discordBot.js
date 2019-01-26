@@ -6,7 +6,7 @@ const client = new Commando.Client({
   /* ###########################
    *  OWNER ID MOVED TO TOKEN.JS
    * ########################### */
-  owner: process.env.OWNER_ID || require('./config/config.js').ownerId,
+  owner: process.env.DISCORD_OWNERID || require('./config/config.js').ownerId,
   commandPrefix: "&",
   unknownCommandResponse: false
 });
@@ -17,14 +17,6 @@ client.registry
     .registerGroups([
         ['groupname', 'Group Name']
     ])
-    
-    .registerGroups([
-      ['staffcommands', 'ban.js']
-    ])
-    .registerGroups([
-      ['staffcommands', 'kick']
-    ])
-
 
     // Registers all built-in groups, commands, and argument types
     .registerDefaults()
