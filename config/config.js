@@ -7,7 +7,7 @@ module.exports = {
       //TWITCH URL
       url: "https://www.twitch.tv/girlpower_gaming",
       //ACTIVITY TYPE: "PLAYING", "STREAMING", "LISTENING", "WATCHING"
-      type: "Streaming"
+      type: "STREAMING"
     },
     //STATUS: 'online','idle','invisible','dnd'
     status: 'online',
