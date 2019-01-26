@@ -1,5 +1,5 @@
 const discordBot = require('./discordBot.js');
-const token = process.env.DISCORD_TOKEN || require('./config/config.js').token;
+const token = process.env.DISCORD_TOKEN || require('./config/login.js').token;
 if (token == "") {
     throw new Error("Bot Token was not Specified");
 }
