@@ -3,11 +3,11 @@ const {Command} = require("discord.js-commando");
 class KickCommand extends Command {
     constructor(client) {
         super(client,{
-            name:"Kick",
+            name:"kick",
             group: "groupname",
-            memberName: "Kick",
+            memberName: "kick",
             description: "Says Kick",
-            examples: ['Kick']
+            examples: ['kick']
         });
     }
 
