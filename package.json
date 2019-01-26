@@ -7,7 +7,9 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository":"https://github.com/wolfgirl416/my-bot.git",
   "author": "Ocean Walker",
+  "contributors":["tumble1999"],
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.4.2",
