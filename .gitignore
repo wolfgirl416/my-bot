@@ -59,4 +59,4 @@ typings/
 .env
 
 # secret config
-#/config/login.js
+/config/login.js
