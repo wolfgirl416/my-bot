@@ -1,3 +1,4 @@
+require("../../config/global.js");
 const {Command} = require("discord.js-commando");
 
 class KickCommand extends Command {
@@ -7,11 +8,25 @@ class KickCommand extends Command {
             group: "groupname",
             memberName: "kick",
             description: "Says Kick",
-            examples: ['kick']
+            examples: ['kick <member'],
+            args: [
+              {
+                  key: 'member',
+                  prompt: 'Which user do you want to BAN?',
+                  type: 'member'
+              },
+              {
+                  key: 'reason',
+                  prompt: 'What would you like the reason of the BAN to be?',
+                  type: 'string',
+                  default: "The ban hammer has spoken"
+              }
+          ]
         });
     }
 
-    run(message) {
+    run(message,{member,reason}) {
+      //member and reason is stored in member and reson respectivally
         message.reply("Kick");
     }
 }
